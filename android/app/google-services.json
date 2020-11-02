@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "328401965480",
+    "firebase_url": "https://selfel-man.firebaseio.com",
+    "project_id": "selfel-man",
+    "storage_bucket": "selfel-man.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328401965480:android:45fcba738ece5c84e88d9d",
+        "android_client_info": {
+          "package_name": "com.example.projectflutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328401965480-lh1prf4ct6rjr1jvkfbrgoqk1njdjqmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC89Enbw1vGZRzpqUeeu1g_z-knHs8lFFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328401965480-lh1prf4ct6rjr1jvkfbrgoqk1njdjqmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
