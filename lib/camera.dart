@@ -11,11 +11,10 @@ class Camera extends StatefulWidget {
 class _Camera extends State<Camera> {
   File _image;
 
-  camera() async {
-  await ImagePicker.pickImage(source: ImageSource.camera).then((img) {
-      setState(() {
-        _image = img;
-      });
+  Future camera() async {
+    final img = await ImagePicker().getImage(source: ImageSource.camera);
+    setState(() {
+      _image = File(img.path);
     });
   }
 

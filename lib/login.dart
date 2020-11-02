@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_session/flutter_session.dart';
 
 import 'package:projectflutter/home.dart';
 import 'package:projectflutter/register.dart';
@@ -79,7 +78,6 @@ return Scaffold(
           .signInWithEmailAndPassword(email: _email, password: _password)
           .then((response) {
             print("เข้าใช้งานสำเร็จ");
-            FlutterSession().set("User_email", _email);
             MaterialPageRoute materialPageRoute =
                 MaterialPageRoute(builder: (BuildContext context) => Home());
             Navigator.of(context).pushAndRemoveUntil(

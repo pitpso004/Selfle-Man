@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:projectflutter/camera.dart';
 import 'package:projectflutter/gallery.dart';
+import 'package:projectflutter/login.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -34,7 +35,19 @@ class _Home extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_pages[_selectedIndex]['title']),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.logout),
+            tooltip: 'Log out',
+            onPressed: () {
+            MaterialPageRoute materialPageRoute =
+                MaterialPageRoute(builder: (BuildContext context) => Login());
+            Navigator.of(context).pushAndRemoveUntil(
+                materialPageRoute, (Route<dynamic> route) => false);
+            },
+          )],
       ),
+
       body: _pages[_selectedIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[

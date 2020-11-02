@@ -23,7 +23,8 @@ class _Gallery extends State<Gallery> {
     super.initState();
     _listenForPermissionStatus();
 
-    _futureGetPath = _getPath();
+    _futureGetPath = ExtStorage.getExternalStoragePublicDirectory(
+        '/Android/data/com.example.projectflutter/files/pictures');
   }
 
   @override
@@ -40,11 +41,11 @@ class _Gallery extends State<Gallery> {
               builder: (BuildContext context, AsyncSnapshot snapshot) {
                 if (snapshot.hasData) {
                   var dir = Directory(snapshot.data);
-                  print('permission status: $_permissionStatus');
+                  // print('permission status: $_permissionStatus');
                   if (_permissionStatus) _fetchFiles(dir);
-                  return Text(snapshot.data);
+                  return Text(""); // snapshot.data
                 } else {
-                  return Text("Loading");
+                  // return Text("Loading");
                 }
               },
             ),
@@ -68,11 +69,6 @@ class _Gallery extends State<Gallery> {
   void _listenForPermissionStatus() async {
     final status = await Permission.storage.request().isGranted;
     setState(() => _permissionStatus = status);
-  }
-
-  Future<String> _getPath() {
-    return ExtStorage.getExternalStoragePublicDirectory(
-        '/Android/data/com.example.projectflutter/files/pictures');
   }
 
   _fetchFiles(Directory dir) {

@@ -80,7 +80,7 @@ class _Register extends State<Register> {
     if ((_email == null || _email == '') || (_password == null || _password == '') || (_confirmpassword == null || _confirmpassword == '')) {
       showAlertDialog(context,'โปรดกรอกข้อมูลให้ครบถ้วน');
 
-    } else if (_password.length < 5){
+    } else if (_password.length <= 5){
       showAlertDialog(context,'รหัสผ่านควรยาวอย่างน้อย 6 ตัวอักษร');
 
     } else if (_password != _confirmpassword) {
@@ -90,7 +90,12 @@ class _Register extends State<Register> {
       await firebaseAuth
         .createUserWithEmailAndPassword(email: _email, password: _password)
         .then((user) {
-          print('ลงทะเบียนสำเร็จ');
+          print('ลงทะเบียนสำเร็จ');          
+          MaterialPageRoute materialPageRoute = MaterialPageRoute(builder: (BuildContext context) => Login());
+          Navigator.of(context).pushAndRemoveUntil(materialPageRoute, (Route<dynamic> route) => false);
+          
+          showAlertDialog(context,'ลงทะเบียนสำเร็จ');
+
       }).catchError((user) {
         print('ลงทะเบียนล้มเหลว');
       });
@@ -117,6 +122,7 @@ class _Register extends State<Register> {
       builder: (BuildContext context) {
         return alert;
       },
+      
     );
   }
 }
