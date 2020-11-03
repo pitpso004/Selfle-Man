@@ -21,7 +21,7 @@
 
 ### 4.หน้า คลังรูปภาพ
 
-![ui4](https://user-images.githubusercontent.com/55909134/97938465-08917000-1db4-11eb-8110-7bd7cfbd1d0d.jpg)
+![ui4](https://user-images.githubusercontent.com/55909134/97951455-d2141f00-1dcc-11eb-8aeb-b4788474c93c.jpg)
 
 #### ระบบจะแสดงรูปภาพจากโฟลเดอร์ที่เก็บรูป
 
