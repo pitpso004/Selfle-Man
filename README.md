@@ -1,16 +1,28 @@
-# projectflutter
+# Selfie Man
+## พัฒนาแอปพลิเคชัน Camera&Gallery ด้วย Flutter
 
-A new Flutter project.
+### 1.หน้า เข้าสู่ระบบ
 
-## Getting Started
+![ui2](https://user-images.githubusercontent.com/55909134/97938461-07f8d980-1db4-11eb-84bf-a6391a881c31.jpg)
 
-This project is a starting point for a Flutter application.
+#### ผู้ใช้งานกรอก อีเมล กับ พาสเวิร์ด ระบบจะนำไปตรวจสอบใน firebase
 
-A few resources to get you started if this is your first Flutter project:
+### 2.หน้า สมัครสมาชิก
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![ui1](https://user-images.githubusercontent.com/55909134/97938454-05967f80-1db4-11eb-9052-e65bd84b2b65.jpg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### ผู้ใช้งานกรอก อีเมล พาสเวิร์ด กับ ยืนยันพาสเวิร์ด ระบบจะนำไปเพิ่มใน firebase
+
+### 3.หน้า เปิดใช้งานกล้อง
+
+![ui3](https://user-images.githubusercontent.com/55909134/97938463-08917000-1db4-11eb-9217-7673b84053ce.jpg)
+
+#### ผู้ใช้งานกดปุ่มไอคอนกล้อง ระบบจะเปิดใช้งานฟังก์ชั่นกล้องในมือถือ
+
+### 4.หน้า คลังรูปภาพ
+
+![ui4](https://user-images.githubusercontent.com/55909134/97938465-08917000-1db4-11eb-8110-7bd7cfbd1d0d.jpg)
+
+#### ระบบจะแสดงรูปภาพจากโฟลเดอร์ที่เก็บรูป
+
+**ผู้จัดทำ** 60022639 ชนกนันท์ จันโจ้ก
